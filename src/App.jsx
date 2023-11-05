@@ -1,12 +1,20 @@
-import HeroSection from "./Components/HeroSection.jsx";
-import Header from "./Components/Header.jsx";
-
+import {BrowserRouter, Routes , Route} from 'react-router-dom'
+import HomePage from './Pages/HomePage';
+import AllComponentPage from './Pages/AllComponentPage';
+import PricingSection from './Pages/PricingSection';
 const App = () =>{
    return(
-     <div className={'bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-[100%] sm:w-[100%] font-Montserrat2'}>
-       <Header/>
-       <HeroSection/>
-     </div>
+     <BrowserRouter>
+      <Routes>
+       <Route path='/' exact Component={HomePage}></Route>
+      </Routes>
+      <Routes>
+       <Route path='/allcomponents' Component={AllComponentPage}></Route>
+      </Routes>
+      <Routes>
+       <Route path='/pricingsection' Component={PricingSection}></Route>
+      </Routes>
+     </BrowserRouter>
    );
 }
 export default App
