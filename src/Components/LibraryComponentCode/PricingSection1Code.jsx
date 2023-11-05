@@ -1,6 +1,6 @@
 import React from 'react'
 import CodeEditor from '../CodeEditor'
-var code = `<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-20 grid-cols-1 place-items-center m-5">
+var code = `<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-20 grid-cols-1 place-items-center m-5">
 <div className="ring-4 ring-black w-[300px] h-[350px] rounded-lg">
   <h1 className="text-center text-3xl">Basic</h1>
   <ol className="list-['¬'] flex m-3 gap-5 flex-col">
